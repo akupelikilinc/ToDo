@@ -42,7 +42,9 @@ export default StyleSheet.create(
             backgroundColor: '#fea400',
             marginLeft: 15,
             marginRight: 15,
-            height: 40
+            height: 40,
+            marginBottom: 20,
+
 
         },
         textAdd: {

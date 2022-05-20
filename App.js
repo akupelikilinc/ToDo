@@ -10,7 +10,8 @@ function App() {
     const [task, setTasks] = useState([]);
 
     const deliveryAdd = () => {
-        !setTasks([...task, text])
+        text ? setTasks([...task, text]) :
+            setTasks([...task]);
         setText("");
     };
 
