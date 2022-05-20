@@ -10,10 +10,11 @@ function App() {
     const [task, setTasks] = useState([]);
 
     const deliveryAdd = () => {
-        setTasks([...task, text])
+        !setTasks([...task, text])
         setText("");
     };
 
+    const taskList = ({ item }) => <ToDo newtask={item} />;
 
 
     return (
@@ -26,19 +27,20 @@ function App() {
                 <TextInput
                     style={mainStyles.Input}
                     placeholder="Görev Yaz!"
-                    onChangeText={(value) => { setText(value) }}
+                    value={text}
+                    onChangeText={setText}
 
                 />
             </View>
             <View>
-                <TouchableOpacity style={mainStyles.textAddArea} onPress={deliveryAdd}>
+                <TouchableOpacity style={mainStyles.addBtn} onPress={deliveryAdd}>
                     <Text style={mainStyles.textAdd}>+ Görevi Ekle</Text>
                 </TouchableOpacity>
             </View>
 
             <FlatList
                 data={task}
-                renderItem={({ item }) => <ToDo newtask={item} />}
+                renderItem={taskList}
                 keyExtractor={(item) => item + Date.now() + Math.random()}
             />
         </SafeAreaView>

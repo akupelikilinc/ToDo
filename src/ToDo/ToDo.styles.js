@@ -5,15 +5,14 @@ export default StyleSheet.create(
     {
         container: {
             flex: 1,
-            backgroundColor: '#eceff1',
+            backgroundColor: 'red',
             margin: 10,
         },
         textAdded: {
-            textAlign: 'right',
             fontStyle: 'italic',
             fontSize: 30,
             fontWeight: 'bold',
-            color: 'orange'
+            color: 'white'
         },
     }
 

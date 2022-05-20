@@ -29,24 +29,24 @@ export default StyleSheet.create(
 
         },
         Input: {
-            color: '#fff',
-            backgroundColor: '#3b7d58',
+            color: 'black',
+            backgroundColor: '#ccc',
             margin: 16,
             paddingHorizontal: 10,
             paddingVertical: 10,
             borderRadius: 10,
         },
-        textAddArea: {
+        addBtn: {
             borderRadius: 10,
             justifyContent: 'center',
-            backgroundColor: 'blue',
+            backgroundColor: '#fea400',
             marginLeft: 15,
             marginRight: 15,
             height: 40
 
         },
         textAdd: {
-            color: '#ccc',
+            color: '#fff',
             fontSize: 20,
             textAlign: 'center',
         },
