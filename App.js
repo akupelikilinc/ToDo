@@ -15,14 +15,17 @@ function App() {
         setText("");
     };
 
+
+
     const taskList = ({ item }) => <ToDo newtask={item} />;
+
 
 
     return (
         <SafeAreaView style={mainStyles.mainContainer}>
             <View style={mainStyles.titleArea}>
                 <Text style={mainStyles.titleText}> Yapılacaklar </Text>
-                <Text style={mainStyles.titleCounter}> 0 </Text>
+                <Text style={mainStyles.titleCounter}> {task.length} </Text>
             </View>
             <View style={mainStyles.inputArea}>
                 <TextInput

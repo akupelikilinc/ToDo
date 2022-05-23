@@ -1,14 +1,31 @@
 import React from 'react';
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import styles from "./ToDo.styles";
 
+const removeTask = () => {
+
+
+    // const lastTask = [...task];
+    // lastTask.splice(index, 1);
+    // setTasks(lastTask);
+};
+
+
 const ToDo = ({ newtask }) => {
+
     return (
-        <View style={styles.container}>
-            <Text style={styles.textAdded}>{newtask}</Text>
+        <View>
+            <TouchableOpacity style={styles.textBtn} /*onPress={removeTask}*/>
+                <Text style={styles.textAdded}>{newtask}</Text>
+            </TouchableOpacity>
+
         </View>
+
     );
 }
+
+
+
 
 
 export default ToDo;

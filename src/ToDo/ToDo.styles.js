@@ -3,7 +3,15 @@ import { StyleSheet } from "react-native";
 export default StyleSheet.create(
 
     {
-        container: {
+
+        textAdded: {
+            fontStyle: 'italic',
+            fontSize: 20,
+            fontWeight: 'bold',
+            color: 'white',
+
+        },
+        textBtn: {
             flex: 1,
             backgroundColor: 'green',
             paddingHorizontal: 10,
@@ -14,12 +22,7 @@ export default StyleSheet.create(
             marginTop: 5,
             paddingVertical: 5,
         },
-        textAdded: {
-            fontStyle: 'italic',
-            fontSize: 20,
-            fontWeight: 'bold',
-            color: 'white'
-        },
+
     }
 
 );
